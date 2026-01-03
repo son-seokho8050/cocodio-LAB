@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>COCODIO LAB | 디자이너의 눈</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Noto+Sans+KR:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans KR', sans-serif;
+            background-color: #f7f7f5;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+        canvas {
+            pointer-events: none;
+        }
+        .text-outline {
+            -webkit-text-stroke: 1px black;
+            color: transparent;
+        }
+        .blob-gradient {
+            background: linear-gradient(135deg, #ff7e5f, #feb47b, #86e3ce, #d0e1f9);
+            filter: blur(40px);
+            mix-blend-mode: multiply;
+        }
+        /* 모바일 터치 오버레이 방지 및 스크롤 최적화 */
+        @media (max-width: 768px) {
+            section {
+                height: auto !important;
+                min-height: 100vh;
+                padding-top: 100px !important;
+                padding-bottom: 60px !important;
+            }
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "framer-motion": "https://esm.sh/framer-motion@^12.23.26",
+    "react-dom": "https://esm.sh/react-dom@^19.2.3"
+  }
+}
+</script>
+</head>
+<body class="m-0 p-0 text-zinc-900 selection:bg-black selection:text-white">
+    <div id="root"></div>
+</body>
+</html>
